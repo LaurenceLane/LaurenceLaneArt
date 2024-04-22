@@ -1,0 +1,118 @@
+<html lang="en-US" style="overflow-x: hidden;">
+    <title>Contact Form</title>
+
+<head>
+<link rel="stylesheet" type="text/css" href="fonts.css">
+
+<style>
+
+        ::-webkit-scrollbar{
+            width: 9px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+            background: #915D55;
+            border-radius: 6px;}
+  
+            ::-webkit-scrollbar-thumb:hover {
+            background: #603e39;
+            border-radius: 6px; }
+
+            ::-webkit-scrollbar-track { 
+            background: rgba(252, 250, 250, 0) }
+
+
+  body{
+  background-color:  rgb(252, 250, 250);
+  
+
+  }
+
+  #button{
+     background-color:  rgb(252, 250, 250);;
+     transition: all 0.1s ease;
+     border-width: 3px;
+     border-radius: 6px;
+     border-style: solid;
+     border-color: #603e39;
+     color:  #603e39;
+     text-align: center;
+     font-family: lexend;
+     font-size: 16px;
+     width: 70%;
+     margin-top: -60px;  
+     margin-bottom: 3px; 
+}
+#button:hover{
+    transition: all 0.1s ease;
+    background-color: #f5f0f0;
+    scale: 1.05 1.12;
+    
+}
+
+label{
+text-align: left;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 130%;
+        font-weight: 600;
+        color: #5e3f39; 
+}
+
+h1{
+    color:  #603e39;
+     text-align: center;
+     font-family: lexend;
+     font-size: 25px;
+}
+
+</style>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    
+    <div class="container" style="margin-left: -3px; "   >
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+        
+        <input type="hidden" name="access_key" value="d057582e-b6e7-4cfd-b723-623816ee9a74">
+      
+          <label for="fname">First Name</label> 
+          <br>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <br>
+          <label for="lname">Last Name</label>
+          <br>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <br>
+
+          <label for="email">Email</label>
+          <br>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+          <br>
+      
+          <label for="subject">Subject</label>
+          <br>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height: 100px"></textarea>
+          <br>
+
+          <div class="h-captcha" data-captcha="true"  style="transform:scale(0.60);-webkit-transform:scale(0.60);transform-origin:0 0;-webkit-transform-origin:0 0; margin-top: 10px;" ></div>
+          <br>  
+          <div style= "display: flex; justify-content: center; align-items: center; ">
+          <input type="submit" value="Submit" id="button">
+            </div>
+      
+        </form>
+      </div>
+    
+</body>
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+</html>
