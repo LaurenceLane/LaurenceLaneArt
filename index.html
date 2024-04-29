@@ -30,7 +30,8 @@
 
  .header {
     grid-column: col-start /span 14;
-    height: 50px;}
+    height: 50px;
+    margin-top: 20px;}
 
 /* Navigation */
  .nav1 {
@@ -71,7 +72,7 @@ button:hover{
     grid-row: 2 / 5;
     
 }
-#about{
+#home{
     animation: fade-in 1s;
 }
 #me{
@@ -191,18 +192,19 @@ h2{
 </head>
 
 <body>
+  
 <div class="bodycontainer">
 <div class="wrapper">
-    <div class="header">
-
-    </div>
+    
+   <!-- <div class="header">
+    </div> -->
     <div class="nav1" style="text-align: center; overflow: hidden;">
         <br>
             <img src="media/images/LogoColor.png" width="100%" >
             <br>
             <h2>Navigation</h2>
-            <button id="aboutButton">
-                <div class="navbutton">About</div>
+            <button id="homeButton">
+                <div class="navbutton">Home</div>
                 </button>
             <button id="meButton">
                 <div class="navbutton">Me</div>
@@ -214,20 +216,18 @@ h2{
         </div>
     <!--HomeBodyDivisions-->
     <div class="content">
-        <div id="about">
-            <div class="zoom">
-               <!-- <a href="lostEden/losteden-home.html"> -->
-                 <img src="media/images/LaurenceChibi.png"  alt="" style="height: 300px; margin-left: 0px; margin-top: 10px;">
+        <div id="home">
+            <div style=" margin: 0 auto;  border-width: 3px; padding-top: 10px; display: flex; justify-content: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FwcREoxlJsQ?si=jn1dtjF3hehOLSD3"  allow="autoplay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-width: 3px; border-radius: 6px; border-style: solid; border-color: #532d27; outline-style: dashed; outline-width: 2px; outline-offset: 2px; outline-color:#532d27; color: #915D55;">
+                    ></iframe>"                
+
                  </div>
                 </a>
             <div style="padding: 20px;">
-            <h1>What is <i>Lane Street?</i></h1>
-            <p class="bodyText">"Originally the name of my friends' minecraft server, I thought it was a fun oxymoron referencing my username. It's stuck ever since."</p>
-            <p class="bodyText"><i>Lane Street</i> is a Frankenstein site, featuring both school and passion projects created by <a href="https://twitter.com/LaurenceLaneArt" target="_blank" rel="noopener noreferrer" style="color: #9b3b3b; text-decoration: none;">@LaurenceLane</a>, an artist and over-all pop-culture enthusiast. These projects consist of digital illustration, animation, comics, and the occasional hobby hyperfixation.</p>
-            <br style="line-height: 6px;">
-            <h1>Who is Laurence?</h1>
-            <p class="bodyText">Laurence is me! I use they/them and he/him. My work is primarily character design, but I tend to try a bit of everything, from wood-working to HTML/CSS.</p>
-            </div>
+            <h1>Welcome!</h1>
+            <p class="bodyText">Thanks for visiting my own little corner of the internet!</p>
+            <p class="bodyText">This website is an attempt at a mix of a portfolio and personal site. A way of showing my work professionally, while also showcasing the personality behind it. I take a lot of inspiration from the early 2000's webites of my childhood. The sheer amount of self a creator could put into their site making me wish to emulate the inviting and curiosity piquing energy of that age of the internet. </p>
+             </div>
         </div>
      <div id="me" style="display: none;">
         <div class="center" style="padding: 20px">
@@ -249,6 +249,7 @@ h2{
         <h1 style="display: block; color: #f5f0f0; background-color: #5e3f39; margin: -11px; padding: 20px;">Get in Touch!</h1>
         <div class="contactForm">
         <iframe src="contactForm.html" style="position: relative; top: 5%; height:90%; width: 100%; border-style: none;"></iframe>
+        <img src="media/images/LaurenceChibi.png" style="height: 150px; position: relative; z-index: 2; left: 60%; top: -80px;">
     </div>
     </div>
     <div class="updates">
@@ -264,16 +265,16 @@ h2{
 
 <script>
 
-var aboutButton = document.getElementById("aboutButton");
+var homeButton = document.getElementById("homeButton");
 var meButton = document.getElementById("meButton");
 var portfolioButton = document.getElementById("portfolioButton");
 
-var about = document.getElementById("about");
+var home = document.getElementById("home");
 var me = document.getElementById("me");
 var portfolio = document.getElementById("portfolio");
 
-aboutButton.addEventListener('click',()=>{
-    about.style.display='block';
+homeButton.addEventListener('click',()=>{
+    home.style.display='block';
  if (document.getElementById("me").style.display='block')
     me.style.display='none';
  if (document.getElementById("portfolio").style.display='block')
@@ -282,8 +283,8 @@ aboutButton.addEventListener('click',()=>{
 
 meButton.addEventListener('click',()=>{
     me.style.display='block';
-if (document.getElementById("about").style.display='block')
-    about.style.display='none';
+if (document.getElementById("home").style.display='block')
+    home.style.display='none';
 if (document.getElementById("portfolio").style.display='block')
     portfolio.style.display='none';
 
@@ -293,8 +294,8 @@ portfolioButton.addEventListener('click',()=>{
     portfolio.style.display='block';
  if (document.getElementById("me").style.display='block')
     me.style.display='none';
-if (document.getElementById("about").style.display='block')
-    about.style.display='none';
+if (document.getElementById("home").style.display='block')
+    home.style.display='none';
 });
 
     </script>
